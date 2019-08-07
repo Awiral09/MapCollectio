@@ -1,4 +1,4 @@
-public class Employee {
+public class Employee implements Comparable<Employee> {
     private int empNo;
     private String empName;
     private String empDept;
@@ -14,11 +14,19 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "\nEmployee{" +
+        return "\n" +
                 "empNo=" + empNo +
                 ", empName='" + empName + '\'' +
                 ", empDept='" + empDept + '\'' +
-                ", empSal=" + empSal +
-                '}';
+                ", empSal=" + empSal;
+    }
+
+    @Override
+    public int compareTo(Employee employee) {
+        int deptDiff = this.empDept.compareTo(employee.empDept);
+        if (deptDiff == 0)
+//        return this.empNo-(employee.empNo);
+            return employee.empNo - this.empNo;
+        return deptDiff;
     }
 }
