@@ -25,8 +25,11 @@ public class Student implements Comparable<Student> {
     @Override
     public int compareTo(Student student) {
         int courseDiff = this.course.compareTo(student.course);
-        if (courseDiff == 0)
+        System.out.println("courseDifference = " + courseDiff);
+        if (courseDiff == 0) {
+            //  System.out.println(this.sno-student.sno);
             return this.sno - student.sno;
+        }
         return courseDiff;
     }
 }

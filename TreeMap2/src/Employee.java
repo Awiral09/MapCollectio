@@ -23,10 +23,10 @@ public class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee employee) {
-        int deptDiff = this.empDept.compareTo(employee.empDept);
-        if (deptDiff == 0)
-//        return this.empNo-(employee.empNo);
-            return employee.empNo - this.empNo;
-        return deptDiff;
+//        int deptDiff = this.empDept.compareTo(employee.empDept);
+//        if (deptDiff == 0)
+        return this.empNo - (employee.empNo);
+//            return employee.empNo - this.empNo;
+//        return deptDiff;
     }
 }
