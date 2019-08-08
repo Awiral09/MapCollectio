@@ -29,6 +29,8 @@ public class Student implements Comparable<Student> {
         if (courseDiff == 0) {
             //  System.out.println(this.sno-student.sno);
             return this.sno - student.sno;
+            //return student.sno - this.sno;
+
         }
         return courseDiff;
     }

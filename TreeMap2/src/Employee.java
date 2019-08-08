@@ -1,4 +1,6 @@
-public class Employee implements Comparable<Employee> {
+import java.util.Comparator;
+
+public class Employee implements Comparable<Employee>, Comparator<Employee> {
     private int empNo;
     private String empName;
     private String empDept;
@@ -23,10 +25,21 @@ public class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee employee) {
-//        int deptDiff = this.empDept.compareTo(employee.empDept);
-//        if (deptDiff == 0)
+        int deptDiff = this.empDept.compareTo(employee.empDept);
+        if (deptDiff == 0)
         return this.empNo - (employee.empNo);
 //            return employee.empNo - this.empNo;
-//        return deptDiff;
+        return deptDiff;
+    }
+
+    @Override
+    public int compare(Employee o1, Employee o2) {
+
+        return 0;
+    }
+
+    @Override
+    public Comparator<Employee> reversed() {
+        return null;
     }
 }
