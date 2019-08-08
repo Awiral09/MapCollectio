@@ -10,9 +10,13 @@ import java.util.TreeSet;
 
 public class School {
     public static void main(String[] args) {
-        TreeSet<Student> students = new TreeSet<>();
+        TreeSet<Student> students = new TreeSet<>(new StudentHeightComparator());
         students.add(new Student(101, "Ramesh", "CJ", 5000, 5.7));
-        students.add(new Student(102, "Awiral", "AJ", 2500, 5.4));
+        students.add(new Student(101, "Awiral", "CJ", 2500, 5.7));
+        students.add(new Student(101, "Ramesh", "CJ", 5000, 5.7));
+
+
+        System.out.println(students);
 
     }
 }
