@@ -3,6 +3,7 @@ package com.awiral.controller;
 public class Student implements Comparable<Student> {
     private int sno;
     private String name;
+
     private String course;
     private double fee;
 
@@ -28,8 +29,10 @@ public class Student implements Comparable<Student> {
         System.out.println("courseDifference = " + courseDiff);
         if (courseDiff == 0) {
             //  System.out.println(this.sno-student.sno);
+            //For ascending sorting order (this.sno - student.sno)
             return this.sno - student.sno;
-            //return student.sno - this.sno;
+
+            //for descending sorting order use return student.sno - this.sno;
 
         }
         return courseDiff;
