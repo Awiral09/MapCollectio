@@ -3,7 +3,7 @@ import java.util.TreeSet;
 /**
  * **********************************************************************
  * Develop a program to create a custom Comparator to store Student     *
- * objects and sort them in descending order course & sNo wise.         *
+ * objects and sort them in descending order course, sNo wise & height wise.         *
  * *
  * ***********************************************************************
  */
