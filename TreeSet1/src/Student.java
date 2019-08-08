@@ -1,4 +1,4 @@
-public class Student {
+public class Student extends StudentHeightComparator {
     private int sno;
     private String name;
     private String course;

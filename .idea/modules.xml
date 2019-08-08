@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MapCollections.iml" filepath="$PROJECT_DIR$/MapCollections.iml" />
       <module fileurl="file://$PROJECT_DIR$/TreeMap2/TreeMap2.iml" filepath="$PROJECT_DIR$/TreeMap2/TreeMap2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TreeSet1/TreeSet1.iml" filepath="$PROJECT_DIR$/TreeSet1/TreeSet1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TreeSet1/TreeSet(Custom Comparator).iml" filepath="$PROJECT_DIR$/TreeSet1/TreeSet(Custom Comparator).iml" />
       <module fileurl="file://$PROJECT_DIR$/TreeMap/TreeSetDemo1.iml" filepath="$PROJECT_DIR$/TreeMap/TreeSetDemo1.iml" />
     </modules>
   </component>
